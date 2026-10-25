@@ -9,7 +9,6 @@ import { scrollState, lerp, smoothstep } from '../lib/scrollState'
 function Shards() {
   const { scene } = useGLTF('/models/alche_shards.glb')
   const group = useRef<THREE.Group>(null)
-  const clusterRef = useRef<THREE.Group>(null)
   const core = useRef<THREE.Mesh>(null)
   const meshRefs = useRef<(THREE.Mesh | null)[]>([])
   const cluster = useMemo(() => {
